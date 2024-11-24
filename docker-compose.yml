@@ -1,29 +1,12 @@
-version: "3"
-
 services:
-  web:
+  docker:
     container_name: web
     build:
       context: .
-      dockerfile: ./apps/web/Dockerfile
-    restart: always
-    ports:
-      - 3000:3000
-    networks:
-      - app_network
-  api:
-    container_name: api
-    build:
-      context: .
-      dockerfile: ./apps/api/Dockerfile
-    restart: always
-    ports:
-      - 3001:3001
-    networks:
-      - app_network
+      dockerfile: ./Dockerfile
+    # restart: always
+    command: "deno --version"
 
-# Define a network, which allows containers to communicate
-# with each other, by using their container name as a hostname
 networks:
-  app_network:
+  shared_network:
     external: true

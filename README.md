@@ -76,3 +76,18 @@ This Turborepo has some additional tools already setup for you:
 
   "build": "tsc", "clean": "rm -rf dist", "dev": "tsc -w", "lint": "eslint
   \"src/**/_.ts_\" --max-warnings 0", "test": "jest"
+
+
+https://github.com/vercel/turborepo/blob/main/examples/with-docker/apps/api/Dockerfile
+https://github.com/denoland/deno_docker/blob/main/alpine.dockerfile
+https://github.com/google/wireit
+https://github.com/khanadnanxyz/keycloak-otp-authenticator
+https://github.com/DavidHavl/hono-rest-api-starter/tree/main
+https://github.com/honojs/middleware/tree/main/packages/event-emitter
+https://github.com/honojs/middleware/tree/main/packages/tsyringe
+https://github.com/honojs/middleware/tree/main/packages
+https://github.com/honojs/starter/blob/main/templates/deno/main.ts
+https://medium.com/profusion-engineering/keycloak-passwordless-authentication-550ca095c0bf
+https://next-auth.js.org/getting-started/example
+https://authjs.dev/getting-started/integrations
+https://tamagui.dev/docs/guides/expo
