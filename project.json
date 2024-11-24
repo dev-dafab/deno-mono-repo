@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "apiv2": { "tags": ["api"] },
+    "service2": { "tags": ["frontend"] }
+  }
+}

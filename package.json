@@ -1,0 +1,30 @@
+{
+  "name": "tri-connect-services",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "format": "turbo run fmt",
+    "lint": "turbo run lint",
+    "test": "turbo run test --ui=tui",
+    "dev:api": "turbo run dev --filter=@trics/api --ui=tui"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.5.0"
+  },
+  "packageManager": "npm@10.5.0",
+  "workspaces": [
+    "apps/*",
+    "libs/*",
+    "cli/*"
+  ],
+  "projects": {
+    "apps/apiv2": { "tags": ["deno"] }
+  }
+}

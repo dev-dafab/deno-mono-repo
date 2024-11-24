@@ -1,0 +1,18 @@
+{
+  "name": "@trics/sayHello",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "deno task dev",
+    "lint": "deno lint",
+    "lint:fix": "deno lint --fix",
+    "format": "deno fmt --check",
+    "format:fix": "deno fmt",
+    "test": "deno test --no-check",
+    "test:watch": "deno test --no-check --watch",
+    "doc": "deno doc",
+    "coverage": "deno coverage",
+    "build": "npx esbuild index.ts --bundle --outfile=dist/index.js --format=esm --sourcemap"
+  }
+}

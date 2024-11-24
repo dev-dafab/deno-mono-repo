@@ -1,0 +1,15 @@
+{
+  "name": "@trics/api",
+  "scripts": {
+    "dev": "deno task dev",
+    "lint": "deno lint",
+    "lint:fix": "deno lint --fix",
+    "format": "deno fmt --check",
+    "format:fix": "deno fmt",
+    "test": "deno test --no-check",
+    "test:watch": "deno test --no-check --watch",
+    "doc": "deno doc",
+    "coverage": "deno coverage",
+    "build": "deno compile --output=out/api main.ts"
+  }
+}

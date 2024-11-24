@@ -1,0 +1,3 @@
+(function () {
+  window.DENO_DOC_SEARCH_INDEX = {"nodes":[{"kind":[{"char":"T","kind":"TypeAlias","title":"Type Alias"}],"name":"ApiRoutes","file":".","doc":"","url":"././~/ApiRoutes.html","deprecated":false},{"kind":[{"char":"v","kind":"Variable","title":"Variable"}],"name":"apiRoutes","file":".","doc":"","url":"././~/apiRoutes.html","deprecated":false},{"kind":[{"char":"v","kind":"Variable","title":"Variable"}],"name":"default","file":".","doc":"","url":"././~/default.html","deprecated":false}]};
+})()
