@@ -5,7 +5,8 @@
     "zod": "npm:zod",
     "@hono/zod-validator": "npm:@hono/zod-validator",
     "zod-openapi": "npm:@hono/zod-openapi",
-    "@hono/swagger-ui": "npm:@hono/swagger-ui"
+    "@hono/swagger-ui": "npm:@hono/swagger-ui",
+    "@trics/sayHello": "../../libs/sayHello/index.ts"
   },
   "tasks": {
     "dev": "deno run --allow-net --watch main.ts"

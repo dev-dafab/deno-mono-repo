@@ -1,7 +1,7 @@
 {
-  "name": "sayHello",
+  "name": "@trics/sayHello",
   "version": "0.1.0",
-  "exports": "./mod.ts",
+  "exports": "./index.ts",
   "tasks": {
     "dev": "deno test --watch main.ts"
   },

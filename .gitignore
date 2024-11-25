@@ -11,6 +11,7 @@
 *.orig
 *.pyc
 *.swp
+*.turbo/
 
 #!! ERROR: env is undefined. Use list command to see defined gitignore types !!#
 

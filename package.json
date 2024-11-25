@@ -23,8 +23,5 @@
     "apps/*",
     "libs/*",
     "cli/*"
-  ],
-  "projects": {
-    "apps/apiv2": { "tags": ["deno"] }
-  }
+  ]
 }

@@ -1,28 +1,30 @@
-import { z, createRoute, OpenAPIHono } from 'zod-openapi'
-import { AppContext } from '../../../context.ts'
-import {sayHello} from "npm:@trics/sayHello"
+import { z, createRoute, OpenAPIHono } from "zod-openapi";
+import { AppContext } from "../../../context.ts";
+import { sayHello } from "@trics/sayHello";
 
 
-const app = new OpenAPIHono<AppContext>()
+const app = new OpenAPIHono<AppContext>();
 
 const route = createRoute({
-  method: 'get',
-  path: '/',
+  method: "get",
+  path: "/",
+  request: {},
   responses: {
     200: {
       content: {
-        'application/json': {
-          schema: z.object({greet: z.string().openapi('greet')}).openapi('GreetingDto'),
+        "application/json": {
+          schema: z
+            .object({ greeting: z.string().openapi({example: "World"}) })
+            .openapi("GreetingDto"),
         },
       },
-      description: 'Returns an greetings',
+      description: "Returns an greetings",
     },
   },
-})
+});
 
-app.openapi(route, (c) => {
-  return c.json({greet: 'Hello World'})
-})
-
+app.openapi(route, c => {
+  return c.json(sayHello());
+});
 
 export default app;

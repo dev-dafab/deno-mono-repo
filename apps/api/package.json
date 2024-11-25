@@ -10,6 +10,6 @@
     "test:watch": "deno test --no-check --watch",
     "doc": "deno doc",
     "coverage": "deno coverage",
-    "build": "deno compile --output=out/api main.ts"
+    "build": "deno compile --output=dist/api main.ts"
   }
 }

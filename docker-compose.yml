@@ -1,5 +1,5 @@
 services:
-  docker:
+  bar:
     container_name: web
     build:
       context: .
